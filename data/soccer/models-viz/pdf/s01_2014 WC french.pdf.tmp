@@ -1,0 +1,8 @@
+digraph n0 {
+fontcolor="blue"
+remincross="true"
+label="s01_2014 WC french"
+"0"[shape="plaintext",style="filled",fillcolor="gold",label="N000: Club"];
+"1"[style="filled",color="white",fillcolor="lightgray",label="N001: Sports\nClub"];
+"1" -> "0"[color="brown",fontcolor="black",label="L000: http://\nschema.org/name"];
+}

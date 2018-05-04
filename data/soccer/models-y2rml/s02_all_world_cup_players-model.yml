@@ -1,0 +1,6 @@
+commands:
+- _type_: SetSemanticType
+  domain: Player
+  input_attr_path: FullName
+  node_id: Player1
+  type: http://schema.org/name

@@ -1,0 +1,5 @@
+source,mrr,accuracy,coverage
+2016_Registered_Foreclosure_Properties,0.1875,0.1875,0.1875
+s1_train_2,0.8166666666666668,0.76,0.88
+s2_train_data_1,0.745,0.7,0.82
+average,0.5830555555555557,0.5491666666666667,0.6291666666666665

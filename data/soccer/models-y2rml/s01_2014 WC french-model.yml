@@ -1,0 +1,6 @@
+commands:
+- _type_: SetSemanticType
+  domain: SportsClub
+  input_attr_path: Club
+  node_id: SportsClub1
+  type: http://schema.org/name
