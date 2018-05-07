@@ -10,16 +10,16 @@ if __name__ == "__main__":
 
     # sms_model_list = [sm.get_semantic_model() for sm in get_karma_models(dataset)]
     sms_model_list = get_semantic_models(dataset)
-    print(sms_model_list)
+    print(len(sms_model_list))
     # sms_model_list: List[SemanticModel] = []
     # datadir = Path(config.datasets.lacity.as_path())
     # for file in (datadir / "models_semantic_types").iterdir():
     #     table = DataTable.load_from_file(datadir / "sources" / f"{file.stem}.csv")
     #     sms_model_list.append(R2RML.load_from_file(file).apply_cmds(table))
 
-    typer = SemanticTyper.get_instance(dataset, sms_model_list[1:])
+    typer = SemanticTyper.get_instance(dataset, sms_model_list[:2])
 
-    typer.semantic_labeling(sms_model_list[1:], sms_model_list[:1], 4, eval_train=True)
+    typer.semantic_labeling(sms_model_list[:2], sms_model_list[2:], 4, eval_train=True)
 
     exp_dir = Path("output")
     eval_sources(sms_model_list, exp_dir / f"eval.train.csv")

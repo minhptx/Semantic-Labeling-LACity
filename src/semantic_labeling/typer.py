@@ -119,7 +119,7 @@ class SemanticTyper(object):
         X = []
         refcols = [refcol for refcol in self.stype_db.train_columns if refcol.id != col.id]
         j = self.stype_db.col2idx[col.id]
-        if col.id == "s2_train_data_1:street6":
+        if col.id == "s5_Category_Page_Box_Content:Image":
             for refcol in refcols:
                 iref = self.stype_db.col2idx[refcol.id]
                 print(refcol.id, self.stype_db.similarity_matrix[j, iref])

@@ -8,8 +8,8 @@ RUN git clone https://github.com/sparsehash/sparsehash.git && \
     make install
 
 RUN apt-get install -y libgl1-mesa-glx
-RUN pip install rdflib pydot
-RUN cd /semantic-labeling && \
-    PYTHONPATH=$(pwd)/src ENV=prod OS=linux python setup.py build_ext --inplace
+RUN pip install rdflib pydot pyrsistent
 
+RUN echo "cd /semantic-labeling\nENV=prod OS=linux python setup.py build_ext --inplace" > build_ext.sh && \
+    chmod +x build_ext.sh
 ENV PYTHONPATH /semantic-labeling/src:$PYTHONPATH

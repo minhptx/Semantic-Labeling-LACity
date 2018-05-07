@@ -1,0 +1,36 @@
+commands:
+- _type_: SetSemanticType
+  domain: LACity
+  input_attr_path: ''
+  node_id: LACity1
+  type: '0'
+- _type_: SetSemanticType
+  domain: LACity
+  input_attr_path: Category
+  node_id: LACity1
+  type: A Livable and Sustainable City
+- _type_: SetSemanticType
+  domain: LACity
+  input_attr_path: Sort
+  node_id: LACity1
+  type: '3'
+- _type_: SetSemanticType
+  domain: LACity
+  input_attr_path: Large size
+  node_id: LACity1
+  type: ''
+- _type_: SetSemanticType
+  domain: LACity
+  input_attr_path: Image
+  node_id: LACity1
+  type: http://data.lacity.org/views/kxz5-hjdi/files/tZ_7OKwN4J8SxpW_uJYPP7sOK41CSwx_7ENgZW73Kpo
+- _type_: SetSemanticType
+  domain: LACity
+  input_attr_path: Text
+  node_id: LACity1
+  type: <p><span>Solar Incentive Program</span></p>
+- _type_: SetSemanticType
+  domain: LACity
+  input_attr_path: Link
+  node_id: LACity1
+  type: https://data.lacity.org/A-Livable-and-Sustainable-City/LADWP-Solar-Incentive-Program/2yrw-q8tw

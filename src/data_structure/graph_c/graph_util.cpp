@@ -7,7 +7,7 @@
             "src/data_structure/graph_c/library.h"
         ],
         "extra_compile_args": [
-            "-std=c++14"
+            "-std=c++11"
         ],
         "include_dirs": [
             "src/data_structure/graph_c"
@@ -555,8 +555,8 @@ static CYTHON_INLINE float __PYX_NAN() {
   #endif
 #endif
 
-#define __PYX_HAVE__src__data_structure__graph_c__graph_util
-#define __PYX_HAVE_API__src__data_structure__graph_c__graph_util
+#define __PYX_HAVE__data_structure__graph_c__graph_util
+#define __PYX_HAVE_API__data_structure__graph_c__graph_util
 #include <string.h>
 #include <string>
 #include "ios"
@@ -1217,20 +1217,20 @@ static PyTypeObject *__pyx_ptype_14data_structure_7graph_c_5graph_GraphNode = 0;
 static PyTypeObject *__pyx_ptype_14data_structure_7graph_c_5graph_GraphLink = 0;
 static PyTypeObject *__pyx_ptype_14data_structure_7graph_c_5graph_Graph = 0;
 
-/* Module declarations from 'src.data_structure.graph_c.graph_util' */
-static std::string __pyx_f_3src_14data_structure_7graph_c_10graph_util_tree_hashing(isi::Graph *, isi::Node *, int, std::vector<int>  &); /*proto*/
-static std::string __pyx_f_3src_14data_structure_7graph_c_10graph_util_to_hashable_string(struct __pyx_obj_14data_structure_7graph_c_5graph_Graph *, int __pyx_skip_dispatch); /*proto*/
+/* Module declarations from 'data_structure.graph_c.graph_util' */
+static std::string __pyx_f_14data_structure_7graph_c_10graph_util_tree_hashing(isi::Graph *, isi::Node *, int, std::vector<int>  &); /*proto*/
+static std::string __pyx_f_14data_structure_7graph_c_10graph_util_to_hashable_string(struct __pyx_obj_14data_structure_7graph_c_5graph_Graph *, int __pyx_skip_dispatch); /*proto*/
 static std::string __pyx_convert_string_from_py_std__in_string(PyObject *); /*proto*/
 static CYTHON_INLINE PyObject *__pyx_convert_PyObject_string_to_py_std__in_string(std::string const &); /*proto*/
 static CYTHON_INLINE PyObject *__pyx_convert_PyUnicode_string_to_py_std__in_string(std::string const &); /*proto*/
 static CYTHON_INLINE PyObject *__pyx_convert_PyStr_string_to_py_std__in_string(std::string const &); /*proto*/
 static CYTHON_INLINE PyObject *__pyx_convert_PyBytes_string_to_py_std__in_string(std::string const &); /*proto*/
 static CYTHON_INLINE PyObject *__pyx_convert_PyByteArray_string_to_py_std__in_string(std::string const &); /*proto*/
-#define __Pyx_MODULE_NAME "src.data_structure.graph_c.graph_util"
-extern int __pyx_module_is_main_src__data_structure__graph_c__graph_util;
-int __pyx_module_is_main_src__data_structure__graph_c__graph_util = 0;
+#define __Pyx_MODULE_NAME "data_structure.graph_c.graph_util"
+extern int __pyx_module_is_main_data_structure__graph_c__graph_util;
+int __pyx_module_is_main_data_structure__graph_c__graph_util = 0;
 
-/* Implementation of 'src.data_structure.graph_c.graph_util' */
+/* Implementation of 'data_structure.graph_c.graph_util' */
 static PyObject *__pyx_builtin_range;
 static const char __pyx_k_[] = "";
 static const char __pyx_k__2[] = ",";
@@ -1252,9 +1252,9 @@ static PyObject *__pyx_n_s_range;
 static PyObject *__pyx_kp_b_s_s;
 static PyObject *__pyx_kp_b_s_s_2;
 static PyObject *__pyx_n_s_test;
-static PyObject *__pyx_pf_3src_14data_structure_7graph_c_10graph_util_to_hashable_string(CYTHON_UNUSED PyObject *__pyx_self, struct __pyx_obj_14data_structure_7graph_c_5graph_Graph *__pyx_v_g); /* proto */
+static PyObject *__pyx_pf_14data_structure_7graph_c_10graph_util_to_hashable_string(CYTHON_UNUSED PyObject *__pyx_self, struct __pyx_obj_14data_structure_7graph_c_5graph_Graph *__pyx_v_g); /* proto */
 
-/* "src/data_structure/graph_c/graph_util.pyx":8
+/* "data_structure/graph_c/graph_util.pyx":8
  * 
  * 
  * cdef string tree_hashing(GraphC *g, Node *node, int incoming_link_id, vector[int] &visited_index) except +:             # <<<<<<<<<<<<<<
@@ -1262,7 +1262,7 @@ static PyObject *__pyx_pf_3src_14data_structure_7graph_c_10graph_util_to_hashabl
  *         list children_texts = []
  */
 
-static std::string __pyx_f_3src_14data_structure_7graph_c_10graph_util_tree_hashing(isi::Graph *__pyx_v_g, isi::Node *__pyx_v_node, int __pyx_v_incoming_link_id, std::vector<int>  &__pyx_v_visited_index) {
+static std::string __pyx_f_14data_structure_7graph_c_10graph_util_tree_hashing(isi::Graph *__pyx_v_g, isi::Node *__pyx_v_node, int __pyx_v_incoming_link_id, std::vector<int>  &__pyx_v_visited_index) {
   PyObject *__pyx_v_children_texts = 0;
   int __pyx_v_link_id;
   std::string __pyx_v_result;
@@ -1279,7 +1279,7 @@ static std::string __pyx_f_3src_14data_structure_7graph_c_10graph_util_tree_hash
   int __pyx_t_9;
   __Pyx_RefNannySetupContext("tree_hashing", 0);
 
-  /* "src/data_structure/graph_c/graph_util.pyx":10
+  /* "data_structure/graph_c/graph_util.pyx":10
  * cdef string tree_hashing(GraphC *g, Node *node, int incoming_link_id, vector[int] &visited_index) except +:
  *     cdef:
  *         list children_texts = []             # <<<<<<<<<<<<<<
@@ -1291,7 +1291,7 @@ static std::string __pyx_f_3src_14data_structure_7graph_c_10graph_util_tree_hash
   __pyx_v_children_texts = ((PyObject*)__pyx_t_1);
   __pyx_t_1 = 0;
 
-  /* "src/data_structure/graph_c/graph_util.pyx":14
+  /* "data_structure/graph_c/graph_util.pyx":14
  *         string result
  * 
  *     if visited_index[node.id] == incoming_link_id:             # <<<<<<<<<<<<<<
@@ -1301,7 +1301,7 @@ static std::string __pyx_f_3src_14data_structure_7graph_c_10graph_util_tree_hash
   __pyx_t_2 = (((__pyx_v_visited_index[__pyx_v_node->id]) == __pyx_v_incoming_link_id) != 0);
   if (__pyx_t_2) {
 
-    /* "src/data_structure/graph_c/graph_util.pyx":16
+    /* "data_structure/graph_c/graph_util.pyx":16
  *     if visited_index[node.id] == incoming_link_id:
  *         # re-visit via same link, cycle detection
  *         return ""             # <<<<<<<<<<<<<<
@@ -1312,7 +1312,7 @@ static std::string __pyx_f_3src_14data_structure_7graph_c_10graph_util_tree_hash
     __pyx_r = __pyx_t_3;
     goto __pyx_L0;
 
-    /* "src/data_structure/graph_c/graph_util.pyx":14
+    /* "data_structure/graph_c/graph_util.pyx":14
  *         string result
  * 
  *     if visited_index[node.id] == incoming_link_id:             # <<<<<<<<<<<<<<
@@ -1321,7 +1321,7 @@ static std::string __pyx_f_3src_14data_structure_7graph_c_10graph_util_tree_hash
  */
   }
 
-  /* "src/data_structure/graph_c/graph_util.pyx":18
+  /* "data_structure/graph_c/graph_util.pyx":18
  *         return ""
  * 
  *     visited_index[node.id] = incoming_link_id             # <<<<<<<<<<<<<<
@@ -1330,7 +1330,7 @@ static std::string __pyx_f_3src_14data_structure_7graph_c_10graph_util_tree_hash
  */
   (__pyx_v_visited_index[__pyx_v_node->id]) = __pyx_v_incoming_link_id;
 
-  /* "src/data_structure/graph_c/graph_util.pyx":19
+  /* "data_structure/graph_c/graph_util.pyx":19
  * 
  *     visited_index[node.id] = incoming_link_id
  *     if node.outgoing_link_ids.size() == 0:             # <<<<<<<<<<<<<<
@@ -1340,7 +1340,7 @@ static std::string __pyx_f_3src_14data_structure_7graph_c_10graph_util_tree_hash
   __pyx_t_2 = ((__pyx_v_node->outgoing_link_ids.size() == 0) != 0);
   if (__pyx_t_2) {
 
-    /* "src/data_structure/graph_c/graph_util.pyx":20
+    /* "data_structure/graph_c/graph_util.pyx":20
  *     visited_index[node.id] = incoming_link_id
  *     if node.outgoing_link_ids.size() == 0:
  *         return node.label             # <<<<<<<<<<<<<<
@@ -1350,7 +1350,7 @@ static std::string __pyx_f_3src_14data_structure_7graph_c_10graph_util_tree_hash
     __pyx_r = __pyx_v_node->label;
     goto __pyx_L0;
 
-    /* "src/data_structure/graph_c/graph_util.pyx":19
+    /* "data_structure/graph_c/graph_util.pyx":19
  * 
  *     visited_index[node.id] = incoming_link_id
  *     if node.outgoing_link_ids.size() == 0:             # <<<<<<<<<<<<<<
@@ -1359,7 +1359,7 @@ static std::string __pyx_f_3src_14data_structure_7graph_c_10graph_util_tree_hash
  */
   }
 
-  /* "src/data_structure/graph_c/graph_util.pyx":22
+  /* "data_structure/graph_c/graph_util.pyx":22
  *         return node.label
  * 
  *     for link_id in node.outgoing_link_ids:             # <<<<<<<<<<<<<<
@@ -1374,7 +1374,7 @@ static std::string __pyx_f_3src_14data_structure_7graph_c_10graph_util_tree_hash
     ++__pyx_t_4;
     __pyx_v_link_id = __pyx_t_6;
 
-    /* "src/data_structure/graph_c/graph_util.pyx":23
+    /* "data_structure/graph_c/graph_util.pyx":23
  * 
  *     for link_id in node.outgoing_link_ids:
  *         result = tree_hashing(g, &g.nodes[g.links[link_id].target_id], link_id, visited_index)             # <<<<<<<<<<<<<<
@@ -1382,14 +1382,14 @@ static std::string __pyx_f_3src_14data_structure_7graph_c_10graph_util_tree_hash
  * 
  */
     try {
-      __pyx_t_3 = __pyx_f_3src_14data_structure_7graph_c_10graph_util_tree_hashing(__pyx_v_g, (&(__pyx_v_g->nodes[(__pyx_v_g->links[__pyx_v_link_id]).target_id])), __pyx_v_link_id, __pyx_v_visited_index);
+      __pyx_t_3 = __pyx_f_14data_structure_7graph_c_10graph_util_tree_hashing(__pyx_v_g, (&(__pyx_v_g->nodes[(__pyx_v_g->links[__pyx_v_link_id]).target_id])), __pyx_v_link_id, __pyx_v_visited_index);
     } catch(...) {
       __Pyx_CppExn2PyErr();
       __PYX_ERR(0, 23, __pyx_L1_error)
     }
     __pyx_v_result = __pyx_t_3;
 
-    /* "src/data_structure/graph_c/graph_util.pyx":24
+    /* "data_structure/graph_c/graph_util.pyx":24
  *     for link_id in node.outgoing_link_ids:
  *         result = tree_hashing(g, &g.nodes[g.links[link_id].target_id], link_id, visited_index)
  *         children_texts.append(b"%s-%s" % (g.links[link_id].label, result))             # <<<<<<<<<<<<<<
@@ -1414,7 +1414,7 @@ static std::string __pyx_f_3src_14data_structure_7graph_c_10graph_util_tree_hash
     __pyx_t_9 = __Pyx_PyList_Append(__pyx_v_children_texts, __pyx_t_7); if (unlikely(__pyx_t_9 == ((int)-1))) __PYX_ERR(0, 24, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
 
-    /* "src/data_structure/graph_c/graph_util.pyx":22
+    /* "data_structure/graph_c/graph_util.pyx":22
  *         return node.label
  * 
  *     for link_id in node.outgoing_link_ids:             # <<<<<<<<<<<<<<
@@ -1423,7 +1423,7 @@ static std::string __pyx_f_3src_14data_structure_7graph_c_10graph_util_tree_hash
  */
   }
 
-  /* "src/data_structure/graph_c/graph_util.pyx":26
+  /* "data_structure/graph_c/graph_util.pyx":26
  *         children_texts.append(b"%s-%s" % (g.links[link_id].label, result))
  * 
  *     return b"(%s:%s)" % (node.label, b",".join(sorted(children_texts)))             # <<<<<<<<<<<<<<
@@ -1456,7 +1456,7 @@ static std::string __pyx_f_3src_14data_structure_7graph_c_10graph_util_tree_hash
   __pyx_r = __pyx_t_3;
   goto __pyx_L0;
 
-  /* "src/data_structure/graph_c/graph_util.pyx":8
+  /* "data_structure/graph_c/graph_util.pyx":8
  * 
  * 
  * cdef string tree_hashing(GraphC *g, Node *node, int incoming_link_id, vector[int] &visited_index) except +:             # <<<<<<<<<<<<<<
@@ -1469,7 +1469,7 @@ static std::string __pyx_f_3src_14data_structure_7graph_c_10graph_util_tree_hash
   __Pyx_XDECREF(__pyx_t_1);
   __Pyx_XDECREF(__pyx_t_7);
   __Pyx_XDECREF(__pyx_t_8);
-  __Pyx_AddTraceback("src.data_structure.graph_c.graph_util.tree_hashing", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("data_structure.graph_c.graph_util.tree_hashing", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_pretend_to_initialize(&__pyx_r);
   __pyx_L0:;
   __Pyx_XDECREF(__pyx_v_children_texts);
@@ -1477,7 +1477,7 @@ static std::string __pyx_f_3src_14data_structure_7graph_c_10graph_util_tree_hash
   return __pyx_r;
 }
 
-/* "src/data_structure/graph_c/graph_util.pyx":29
+/* "data_structure/graph_c/graph_util.pyx":29
  * 
  * 
  * cpdef string to_hashable_string(Graph g):             # <<<<<<<<<<<<<<
@@ -1485,8 +1485,8 @@ static std::string __pyx_f_3src_14data_structure_7graph_c_10graph_util_tree_hash
  *     cdef:
  */
 
-static PyObject *__pyx_pw_3src_14data_structure_7graph_c_10graph_util_1to_hashable_string(PyObject *__pyx_self, PyObject *__pyx_v_g); /*proto*/
-static std::string __pyx_f_3src_14data_structure_7graph_c_10graph_util_to_hashable_string(struct __pyx_obj_14data_structure_7graph_c_5graph_Graph *__pyx_v_g, CYTHON_UNUSED int __pyx_skip_dispatch) {
+static PyObject *__pyx_pw_14data_structure_7graph_c_10graph_util_1to_hashable_string(PyObject *__pyx_self, PyObject *__pyx_v_g); /*proto*/
+static std::string __pyx_f_14data_structure_7graph_c_10graph_util_to_hashable_string(struct __pyx_obj_14data_structure_7graph_c_5graph_Graph *__pyx_v_g, CYTHON_UNUSED int __pyx_skip_dispatch) {
   PyObject *__pyx_v_roots = 0;
   isi::Node *__pyx_v_node;
   isi::Graph *__pyx_v_gc;
@@ -1505,7 +1505,7 @@ static std::string __pyx_f_3src_14data_structure_7graph_c_10graph_util_to_hashab
   PyObject *__pyx_t_9 = NULL;
   __Pyx_RefNannySetupContext("to_hashable_string", 0);
 
-  /* "src/data_structure/graph_c/graph_util.pyx":32
+  /* "data_structure/graph_c/graph_util.pyx":32
  *     # we don't guarantee that it will return consistent result if graph has cycle
  *     cdef:
  *         list roots = []             # <<<<<<<<<<<<<<
@@ -1517,7 +1517,7 @@ static std::string __pyx_f_3src_14data_structure_7graph_c_10graph_util_to_hashab
   __pyx_v_roots = ((PyObject*)__pyx_t_1);
   __pyx_t_1 = 0;
 
-  /* "src/data_structure/graph_c/graph_util.pyx":34
+  /* "data_structure/graph_c/graph_util.pyx":34
  *         list roots = []
  *         Node *node
  *         GraphC *gc = g._graph_c             # <<<<<<<<<<<<<<
@@ -1527,7 +1527,7 @@ static std::string __pyx_f_3src_14data_structure_7graph_c_10graph_util_to_hashab
   __pyx_t_2 = __pyx_v_g->_graph_c;
   __pyx_v_gc = __pyx_t_2;
 
-  /* "src/data_structure/graph_c/graph_util.pyx":36
+  /* "data_structure/graph_c/graph_util.pyx":36
  *         GraphC *gc = g._graph_c
  *         int i
  *         vector[int] visited_index = vector[int](g.get_n_nodes_c(), -2)             # <<<<<<<<<<<<<<
@@ -1542,7 +1542,7 @@ static std::string __pyx_f_3src_14data_structure_7graph_c_10graph_util_to_hashab
   }
   __pyx_v_visited_index = __pyx_t_3;
 
-  /* "src/data_structure/graph_c/graph_util.pyx":38
+  /* "data_structure/graph_c/graph_util.pyx":38
  *         vector[int] visited_index = vector[int](g.get_n_nodes_c(), -2)
  * 
  *     for i in range(g.get_n_nodes_c()):             # <<<<<<<<<<<<<<
@@ -1553,7 +1553,7 @@ static std::string __pyx_f_3src_14data_structure_7graph_c_10graph_util_to_hashab
   for (__pyx_t_5 = 0; __pyx_t_5 < __pyx_t_4; __pyx_t_5+=1) {
     __pyx_v_i = __pyx_t_5;
 
-    /* "src/data_structure/graph_c/graph_util.pyx":39
+    /* "data_structure/graph_c/graph_util.pyx":39
  * 
  *     for i in range(g.get_n_nodes_c()):
  *         node = &gc.nodes[i]             # <<<<<<<<<<<<<<
@@ -1562,7 +1562,7 @@ static std::string __pyx_f_3src_14data_structure_7graph_c_10graph_util_to_hashab
  */
     __pyx_v_node = (&(__pyx_v_gc->nodes[__pyx_v_i]));
 
-    /* "src/data_structure/graph_c/graph_util.pyx":40
+    /* "data_structure/graph_c/graph_util.pyx":40
  *     for i in range(g.get_n_nodes_c()):
  *         node = &gc.nodes[i]
  *         if node.incoming_link_ids.size() == 0:             # <<<<<<<<<<<<<<
@@ -1572,7 +1572,7 @@ static std::string __pyx_f_3src_14data_structure_7graph_c_10graph_util_to_hashab
     __pyx_t_6 = ((__pyx_v_node->incoming_link_ids.size() == 0) != 0);
     if (__pyx_t_6) {
 
-      /* "src/data_structure/graph_c/graph_util.pyx":41
+      /* "data_structure/graph_c/graph_util.pyx":41
  *         node = &gc.nodes[i]
  *         if node.incoming_link_ids.size() == 0:
  *             roots.append(tree_hashing(gc, node, -1, visited_index))             # <<<<<<<<<<<<<<
@@ -1580,7 +1580,7 @@ static std::string __pyx_f_3src_14data_structure_7graph_c_10graph_util_to_hashab
  *     return b",".join(sorted(roots))
  */
       try {
-        __pyx_t_7 = __pyx_f_3src_14data_structure_7graph_c_10graph_util_tree_hashing(__pyx_v_gc, __pyx_v_node, -1, __pyx_v_visited_index);
+        __pyx_t_7 = __pyx_f_14data_structure_7graph_c_10graph_util_tree_hashing(__pyx_v_gc, __pyx_v_node, -1, __pyx_v_visited_index);
       } catch(...) {
         __Pyx_CppExn2PyErr();
         __PYX_ERR(0, 41, __pyx_L1_error)
@@ -1590,7 +1590,7 @@ static std::string __pyx_f_3src_14data_structure_7graph_c_10graph_util_to_hashab
       __pyx_t_8 = __Pyx_PyList_Append(__pyx_v_roots, __pyx_t_1); if (unlikely(__pyx_t_8 == ((int)-1))) __PYX_ERR(0, 41, __pyx_L1_error)
       __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-      /* "src/data_structure/graph_c/graph_util.pyx":40
+      /* "data_structure/graph_c/graph_util.pyx":40
  *     for i in range(g.get_n_nodes_c()):
  *         node = &gc.nodes[i]
  *         if node.incoming_link_ids.size() == 0:             # <<<<<<<<<<<<<<
@@ -1600,7 +1600,7 @@ static std::string __pyx_f_3src_14data_structure_7graph_c_10graph_util_to_hashab
     }
   }
 
-  /* "src/data_structure/graph_c/graph_util.pyx":43
+  /* "data_structure/graph_c/graph_util.pyx":43
  *             roots.append(tree_hashing(gc, node, -1, visited_index))
  * 
  *     return b",".join(sorted(roots))             # <<<<<<<<<<<<<<
@@ -1618,7 +1618,7 @@ static std::string __pyx_f_3src_14data_structure_7graph_c_10graph_util_to_hashab
   __pyx_r = __pyx_t_7;
   goto __pyx_L0;
 
-  /* "src/data_structure/graph_c/graph_util.pyx":29
+  /* "data_structure/graph_c/graph_util.pyx":29
  * 
  * 
  * cpdef string to_hashable_string(Graph g):             # <<<<<<<<<<<<<<
@@ -1630,7 +1630,7 @@ static std::string __pyx_f_3src_14data_structure_7graph_c_10graph_util_to_hashab
   __pyx_L1_error:;
   __Pyx_XDECREF(__pyx_t_1);
   __Pyx_XDECREF(__pyx_t_9);
-  __Pyx_WriteUnraisable("src.data_structure.graph_c.graph_util.to_hashable_string", __pyx_clineno, __pyx_lineno, __pyx_filename, 1, 0);
+  __Pyx_WriteUnraisable("data_structure.graph_c.graph_util.to_hashable_string", __pyx_clineno, __pyx_lineno, __pyx_filename, 1, 0);
   __Pyx_pretend_to_initialize(&__pyx_r);
   __pyx_L0:;
   __Pyx_XDECREF(__pyx_v_roots);
@@ -1639,13 +1639,13 @@ static std::string __pyx_f_3src_14data_structure_7graph_c_10graph_util_to_hashab
 }
 
 /* Python wrapper */
-static PyObject *__pyx_pw_3src_14data_structure_7graph_c_10graph_util_1to_hashable_string(PyObject *__pyx_self, PyObject *__pyx_v_g); /*proto*/
-static PyObject *__pyx_pw_3src_14data_structure_7graph_c_10graph_util_1to_hashable_string(PyObject *__pyx_self, PyObject *__pyx_v_g) {
+static PyObject *__pyx_pw_14data_structure_7graph_c_10graph_util_1to_hashable_string(PyObject *__pyx_self, PyObject *__pyx_v_g); /*proto*/
+static PyObject *__pyx_pw_14data_structure_7graph_c_10graph_util_1to_hashable_string(PyObject *__pyx_self, PyObject *__pyx_v_g) {
   PyObject *__pyx_r = 0;
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("to_hashable_string (wrapper)", 0);
   if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_g), __pyx_ptype_14data_structure_7graph_c_5graph_Graph, 1, "g", 0))) __PYX_ERR(0, 29, __pyx_L1_error)
-  __pyx_r = __pyx_pf_3src_14data_structure_7graph_c_10graph_util_to_hashable_string(__pyx_self, ((struct __pyx_obj_14data_structure_7graph_c_5graph_Graph *)__pyx_v_g));
+  __pyx_r = __pyx_pf_14data_structure_7graph_c_10graph_util_to_hashable_string(__pyx_self, ((struct __pyx_obj_14data_structure_7graph_c_5graph_Graph *)__pyx_v_g));
 
   /* function exit code */
   goto __pyx_L0;
@@ -1656,13 +1656,13 @@ static PyObject *__pyx_pw_3src_14data_structure_7graph_c_10graph_util_1to_hashab
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_3src_14data_structure_7graph_c_10graph_util_to_hashable_string(CYTHON_UNUSED PyObject *__pyx_self, struct __pyx_obj_14data_structure_7graph_c_5graph_Graph *__pyx_v_g) {
+static PyObject *__pyx_pf_14data_structure_7graph_c_10graph_util_to_hashable_string(CYTHON_UNUSED PyObject *__pyx_self, struct __pyx_obj_14data_structure_7graph_c_5graph_Graph *__pyx_v_g) {
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   PyObject *__pyx_t_1 = NULL;
   __Pyx_RefNannySetupContext("to_hashable_string", 0);
   __Pyx_XDECREF(__pyx_r);
-  __pyx_t_1 = __pyx_convert_PyBytes_string_to_py_std__in_string(__pyx_f_3src_14data_structure_7graph_c_10graph_util_to_hashable_string(__pyx_v_g, 0)); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 29, __pyx_L1_error)
+  __pyx_t_1 = __pyx_convert_PyBytes_string_to_py_std__in_string(__pyx_f_14data_structure_7graph_c_10graph_util_to_hashable_string(__pyx_v_g, 0)); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 29, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __pyx_r = __pyx_t_1;
   __pyx_t_1 = 0;
@@ -1671,7 +1671,7 @@ static PyObject *__pyx_pf_3src_14data_structure_7graph_c_10graph_util_to_hashabl
   /* function exit code */
   __pyx_L1_error:;
   __Pyx_XDECREF(__pyx_t_1);
-  __Pyx_AddTraceback("src.data_structure.graph_c.graph_util.to_hashable_string", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("data_structure.graph_c.graph_util.to_hashable_string", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   __Pyx_XGIVEREF(__pyx_r);
@@ -1967,7 +1967,7 @@ static CYTHON_INLINE PyObject *__pyx_convert_PyByteArray_string_to_py_std__in_st
 }
 
 static PyMethodDef __pyx_methods[] = {
-  {"to_hashable_string", (PyCFunction)__pyx_pw_3src_14data_structure_7graph_c_10graph_util_1to_hashable_string, METH_O, 0},
+  {"to_hashable_string", (PyCFunction)__pyx_pw_14data_structure_7graph_c_10graph_util_1to_hashable_string, METH_O, 0},
   {0, 0, 0, 0}
 };
 
@@ -2155,14 +2155,14 @@ static int __pyx_pymod_exec_graph_util(PyObject *__pyx_pyinit_module)
   #if PY_MAJOR_VERSION < 3 && (__PYX_DEFAULT_STRING_ENCODING_IS_ASCII || __PYX_DEFAULT_STRING_ENCODING_IS_DEFAULT)
   if (__Pyx_init_sys_getdefaultencoding_params() < 0) __PYX_ERR(0, 1, __pyx_L1_error)
   #endif
-  if (__pyx_module_is_main_src__data_structure__graph_c__graph_util) {
+  if (__pyx_module_is_main_data_structure__graph_c__graph_util) {
     if (PyObject_SetAttrString(__pyx_m, "__name__", __pyx_n_s_main) < 0) __PYX_ERR(0, 1, __pyx_L1_error)
   }
   #if PY_MAJOR_VERSION >= 3
   {
     PyObject *modules = PyImport_GetModuleDict(); if (unlikely(!modules)) __PYX_ERR(0, 1, __pyx_L1_error)
-    if (!PyDict_GetItemString(modules, "src.data_structure.graph_c.graph_util")) {
-      if (unlikely(PyDict_SetItemString(modules, "src.data_structure.graph_c.graph_util", __pyx_m) < 0)) __PYX_ERR(0, 1, __pyx_L1_error)
+    if (!PyDict_GetItemString(modules, "data_structure.graph_c.graph_util")) {
+      if (unlikely(PyDict_SetItemString(modules, "data_structure.graph_c.graph_util", __pyx_m) < 0)) __PYX_ERR(0, 1, __pyx_L1_error)
     }
   }
   #endif
@@ -2188,7 +2188,7 @@ static int __pyx_pymod_exec_graph_util(PyObject *__pyx_pyinit_module)
   if (__Pyx_patch_abc() < 0) __PYX_ERR(0, 1, __pyx_L1_error)
   #endif
 
-  /* "src/data_structure/graph_c/graph_util.pyx":1
+  /* "data_structure/graph_c/graph_util.pyx":1
  * # distutils: language = c++             # <<<<<<<<<<<<<<
  * 
  * from libcpp.string cimport string
@@ -2213,11 +2213,11 @@ static int __pyx_pymod_exec_graph_util(PyObject *__pyx_pyinit_module)
   __Pyx_XDECREF(__pyx_t_1);
   if (__pyx_m) {
     if (__pyx_d) {
-      __Pyx_AddTraceback("init src.data_structure.graph_c.graph_util", 0, __pyx_lineno, __pyx_filename);
+      __Pyx_AddTraceback("init data_structure.graph_c.graph_util", 0, __pyx_lineno, __pyx_filename);
     }
     Py_DECREF(__pyx_m); __pyx_m = 0;
   } else if (!PyErr_Occurred()) {
-    PyErr_SetString(PyExc_ImportError, "init src.data_structure.graph_c.graph_util");
+    PyErr_SetString(PyExc_ImportError, "init data_structure.graph_c.graph_util");
   }
   __pyx_L0:;
   __Pyx_RefNannyFinishContext();

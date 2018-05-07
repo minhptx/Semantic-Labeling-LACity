@@ -1,5 +1,10 @@
 source,mrr,accuracy,coverage
-2016_Registered_Foreclosure_Properties,0.1875,0.1875,0.1875
-s1_train_2,0.8166666666666668,0.76,0.88
-s2_train_data_1,0.745,0.7,0.82
-average,0.5830555555555557,0.5491666666666667,0.6291666666666665
+s1_train_2,0.875,0.86,0.9
+s2_train_data_1,0.885,0.86,0.92
+s3_2016_Registered_Foreclosure_Properties,0.25,0.25,0.25
+s4_Neighborhood_Council_demographics,0.0,0.0,0.0
+s5_Category_Page_Box_Content,0.0,0.0,0.0
+s6_City_Furniture,0.0,0.0,0.0
+s7_Historic_Preservation_Overlay_Zone_District,0.0,0.0,0.0
+ă_Streetscape_Areas,0.0,0.0,0.0
+average,0.25125,0.24625,0.25875000000000004

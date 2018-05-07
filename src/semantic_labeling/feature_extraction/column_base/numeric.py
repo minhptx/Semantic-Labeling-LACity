@@ -31,7 +31,10 @@ def linregress_test(col1: Column, col2: Column) -> float:
 
 def mann_whitney_u_test(col1: Column, col2: Column) -> float:
     if len(col1.get_numeric_data()) > 1 and len(col2.get_numeric_data()) > 1:
-        return mannwhitneyu(col1.get_numeric_data(), col2.get_numeric_data())[1]
+        try:
+            return mannwhitneyu(col1.get_numeric_data(), col2.get_numeric_data())[1]
+        except:
+            return 0.0
     return 0.0
 
 

@@ -1,0 +1,26 @@
+commands:
+- _type_: SetSemanticType
+  domain: LACity
+  input_attr_path: ''
+  node_id: LACity1
+  type: '0'
+- _type_: SetSemanticType
+  domain: LACity
+  input_attr_path: OBJECTID
+  node_id: LACity1
+  type: '1'
+- _type_: SetSemanticType
+  domain: LACity
+  input_attr_path: NAME
+  node_id: LACity1
+  type: Windsor Village
+- _type_: SetSemanticType
+  domain: LACity
+  input_attr_path: TOOLTIP
+  node_id: LACity1
+  type: 'District: Windsor Village'
+- _type_: SetSemanticType
+  domain: LACity
+  input_attr_path: DIST_TYPE
+  node_id: LACity1
+  type: HPOZ

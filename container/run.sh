@@ -1,0 +1,1 @@
+docker run --rm -v /Users/minhpham/projects/semantic-labeling-2:/semantic-labeling -it isi/typer bash

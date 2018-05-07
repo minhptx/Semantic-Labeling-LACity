@@ -1,0 +1,36 @@
+commands:
+- _type_: SetSemanticType
+  domain: LACity
+  input_attr_path: ''
+  node_id: LACity1
+  type: '0'
+- _type_: SetSemanticType
+  domain: LACity
+  input_attr_path: OBJECTID
+  node_id: LACity1
+  type: '77'
+- _type_: SetSemanticType
+  domain: LACity
+  input_attr_path: NAME
+  node_id: LACity1
+  type: Woodland Hills
+- _type_: SetSemanticType
+  domain: LACity
+  input_attr_path: DIST_TYPE
+  node_id: LACity1
+  type: STRSCAPE
+- _type_: SetSemanticType
+  domain: LACity
+  input_attr_path: TOOLTIP
+  node_id: LACity1
+  type: 'Name: Woodland Hills'
+- _type_: SetSemanticType
+  domain: LACity
+  input_attr_path: Shape_Length
+  node_id: LACity1
+  type: '21154.2881082079'
+- _type_: SetSemanticType
+  domain: LACity
+  input_attr_path: Shape_Area
+  node_id: LACity1
+  type: '1833442.74659238'
