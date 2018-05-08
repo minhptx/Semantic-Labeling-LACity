@@ -1,1 +1,1 @@
-docker run --rm -v $(pwd)/..:/semantic-labeling -it isi/typer python -m temporary.api
+docker run --rm -v $(pwd)/..:/semantic-labeling -w /semantic-labeling -it isi/typer python -m temporary.api
